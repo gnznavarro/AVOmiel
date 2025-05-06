@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* =====================================
+=               Fuentes                =
+===================================== */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =====================================
+=               Estilo del Header                =
+===================================== */
+.logo-header {
+    background-color: white;
+    padding: 0.6rem 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: fixed;         
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;          
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================================
+=               Estilo del Logo                =
+===================================== */
+.logo {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+/* =====================================
+=               Navegacion                =
+===================================== */
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-menu a { 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    background-color: #efb810;
+    border-radius: 5px; 
+}
+
+.nav-menu a:hover {
+    background-color: #ffd64d;
+    transition: background-color 0.3s;
+}
+
+
+/* =====================================
+=               Contenido Home                 =
+===================================== */
+.home-content {
+    padding: 2rem 5%;
+    margin-top: 11rem;
+    background-color: rgb(235, 223, 212); 
+}
+
+.hero-image {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.imagen-portada {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-radius: 10px;
+  }
+
+.eslogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color:white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.info-importante h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info-img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info-lista {
+    list-style: none;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 1rem;
+    max-width: 400px;
+}
+
+/* =====================================
+=               ASIDE-DATO CURIOSO                =
+===================================== */
+
+.dato-curioso {
+    background-color: #fff7e0;
+    border-left: 5px solid #efb810; 
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: auto;
+    align-self: center;
+}
+
+.dato-curioso h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #efb810;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dato-curioso p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.dato-curioso i {
+    color: #efb810;
+}
+/* =====================================
+=               HOME GRID                =
+===================================== */
+.home-grid {
+    display: grid;
+    grid-template-areas:
+      "hero"
+      "info"
+      "aside";
+    row-gap: 2rem;
+    padding: 2rem 5%;
+    margin-top: 11rem;
+    background-color: rgb(235, 223, 212);
+  }
+  
+  .hero-image { grid-area: hero; }
+  .info-importante { grid-area: info; }
+  .dato-curioso { grid-area: aside; }
+  
+  @media (min-width: 768px) {
+    .home-grid {
+      grid-template-areas:
+        "hero hero"
+        "info aside";
+      grid-template-columns: 2fr 1fr;
+      column-gap: 2rem;
+    }
+  
+    .eslogan {
+      font-size: 1.5rem;
+    }
+  }
+  
+/* =====================================
+=               Responsive                =
+===================================== */
+
+@media (max-width: 768px) {
+    .info-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dato-curioso {
+        margin: 2rem 0;
+    }
+
+    .eslogan {
+        font-size: 1.5rem;
+    }
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-item {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-item:hover {
+    color: #efb810;
+}
+
+.footer i {
+    font-size: 1.2rem;
+}
+
+/* =====================================
+=               Quienes Somos                =
+===================================== */
+.main-quienes {
+    margin-top: 11rem;
+    padding: 2rem 5%;
+    background-color: rgb(235, 223, 212);
+}
+
+/* =====================================
+=               Productos                =
+===================================== */
+.main-productos {
+    margin-top: 11rem;
+    padding: 2rem 5%;
+    background-color: rgb(235, 223, 212); 
+}
+
+/* =====================================
+=               Tienda                =
+===================================== */
+.main-tienda {
+    margin-top: 11rem;
+    padding: 2rem 5%;
+    background-color: rgb(235, 223, 212); 
+}
+
+/* =====================================
+=               Contacto                =
+===================================== */
+.main-contacto {
+    margin-top: 11rem;
+    padding: 2rem 5%;
+    background-color: rgb(235, 223, 212); 
+}
