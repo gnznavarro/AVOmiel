@@ -69,7 +69,7 @@ h1, h2, h3 {
 ===================================== */
 .home-content {
     padding: 2rem 5%;
-    margin-top: 11rem;
+    margin-top: 10rem;
     background-color: rgb(235, 223, 212); 
 }
 
@@ -101,7 +101,7 @@ h1, h2, h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 3rem;
     color:white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -268,7 +268,7 @@ h1, h2, h3 {
 =               Quienes Somos                =
 ===================================== */
 .main-quienes {
-    margin-top: 11rem;
+    margin-top: 10rem;
     padding: 2rem 5%;
     background-color: rgb(235, 223, 212);
 }
@@ -277,16 +277,152 @@ h1, h2, h3 {
 =               Productos                =
 ===================================== */
 .main-productos {
-    margin-top: 11rem;
     padding: 2rem 5%;
+    margin-top: 10rem;
     background-color: rgb(235, 223, 212); 
 }
 
+.productos-grid {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 5%;
+    margin: 10rem auto 0 auto;
+    background-color: rgb(235, 223, 212);
+  }
+  
+  .titulo-productos {
+    text-align: center;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .producto {
+    position: relative;
+    background-color: #fff7e0;
+    border-left: 5px solid #efb810;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .producto:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Contenedor de imágenes con efecto hover */
+  .producto-img-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .img-1, .img-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+    border-radius: 10px;
+  }
+  
+  .img-2 {
+    opacity: 0;
+  }
+  
+  .producto-img-container:hover .img-2 {
+    opacity: 1;
+  }
+  
+  .producto-img-container:hover .img-1 {
+    opacity: 0;
+  }
+  
+  /* Info del producto */
+  .producto-info {
+    text-align: center;
+  }
+  
+  .producto-info h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #efb810;
+    margin-bottom: 0.5rem;
+  }
+  
+  .producto-info p {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .ver-mas {
+    background-color: #efb810;
+    color: #222;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .ver-mas:hover {
+    background-color: #ffd64d;
+  }
+  
+  /* Info extra escondida por defecto */
+  .extra-info {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-size: 0.95rem;
+    z-index: 10;
+  }
+  
+  /* Alineación por tipo */
+  .extra-info.miel {
+    left: -270px;
+  }
+  
+  .extra-info.polen {
+    right: -270px;
+  }
+  
+  @media (max-width: 768px) {
+    .productos-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .extra-info {
+      position: static;
+      margin-top: 1rem;
+      width: auto;
+    }
+  
+    .extra-info.miel,
+    .extra-info.polen {
+      left: auto;
+      right: auto;
+    }
+  }
 /* =====================================
 =               Tienda                =
 ===================================== */
 .main-tienda {
-    margin-top: 11rem;
+    margin-top: 9rem;
     padding: 2rem 5%;
     background-color: rgb(235, 223, 212); 
 }
@@ -295,7 +431,7 @@ h1, h2, h3 {
 =               Contacto                =
 ===================================== */
 .main-contacto {
-    margin-top: 11rem;
+    margin-top: 9rem;
     padding: 2rem 5%;
     background-color: rgb(235, 223, 212); 
 }
