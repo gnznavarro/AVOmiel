@@ -110,6 +110,7 @@ h1, h2, h3 {
 }
 
 .info-importante h2 {
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     text-align: center;
     margin: 0 auto 1.5rem auto;
@@ -172,6 +173,7 @@ h1, h2, h3 {
 
 .dato-curioso p {
     font-family: 'Inter', sans-serif;
+    font-style: italic;
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -272,6 +274,40 @@ h1, h2, h3 {
     padding: 2rem 5%;
     background-color: rgb(235, 223, 212);
 }
+
+
+.container {
+  max-width: 800px;
+  margin: 6rem auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+
+/* Títulos */
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* Card del texto informativo */
+.card-info {
+  background-color: #fff7e0;
+  border-left: 5px solid #efb810;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
 
 /* =====================================
 =               Productos                =
@@ -422,10 +458,42 @@ h1, h2, h3 {
 =               Tienda                =
 ===================================== */
 .main-tienda {
-    margin-top: 9rem;
+    margin-top: 10rem;
     padding: 2rem 5%;
-    background-color: rgb(235, 223, 212); 
+    background-color: rgb(235, 223, 212);
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(235, 223, 212);
+}
+
+h1, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.producto-card {
+  border: none;
+  border-left: 5px solid #efb810;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: scale(1.02);
+}
+
+.producto-card .card-title {
+  font-weight: bold;
+  color: #efb810;
+}
+
+.producto-card .precio {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
 
 /* =====================================
 =               Contacto                =
