@@ -1,280 +1,276 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 /* =====================================
 =               Fuentes                =
 ===================================== */
 body {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* =====================================
 =               Estilo del Header                =
 ===================================== */
 .logo-header {
-    background-color: white;
-    padding: 0.6rem 0.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    position: fixed;         
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;          
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 0.6rem 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* =====================================
 =               Estilo del Logo                =
 ===================================== */
 .logo {
-    width: 10rem;
-    height: 10rem;
-    object-fit: contain;
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
 }
 
 /* =====================================
 =               Navegacion                =
 ===================================== */
 .nav-menu {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-.nav-menu a { 
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 0.6rem 1rem;
-    background-color: #efb810;
-    border-radius: 5px; 
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+  background-color: #efb810;
+  border-radius: 5px;
 }
 
 .nav-menu a:hover {
-    background-color: #ffd64d;
-    transition: background-color 0.3s;
+  background-color: #ffd64d;
+  transition: background-color 0.3s;
 }
-
 
 /* =====================================
 =               Contenido Home                 =
 ===================================== */
 .home-content {
-    padding: 2rem 5%;
-    margin-top: 10rem;
-    background-color: rgb(235, 223, 212); 
+  padding: 2rem 5%;
+  margin-top: 10rem;
+  background-color: rgb(235, 223, 212);
 }
 
 .hero-image {
-    position: relative;
-    margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .imagen-portada {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); 
-    border-radius: 10px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
 
 .eslogan {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    color:white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    width: 90%;
-    max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
 }
 
 .info-importante h2 {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    text-align: center;
-    margin: 0 auto 1.5rem auto;
-    font-size: 1.5rem;
-    color: #222;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1.5rem;
+  color: #222;
 }
 
 .info-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .info-img {
-    width: 300px;
-    max-width: 100%;
-    border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .info-lista {
-    list-style: none;
-    font-size: 1rem;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    gap: 1rem;
-    max-width: 400px;
+  list-style: none;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 400px;
 }
 
 /* =====================================
 =               ASIDE-DATO CURIOSO                =
 ===================================== */
-
 .dato-curioso {
-    background-color: #fff7e0;
-    border-left: 5px solid #efb810; 
-    padding: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-    color: #333;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin-left: auto;
-    align-self: center;
+  background-color: #fff7e0;
+  border-left: 5px solid #efb810;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-left: auto;
+  align-self: center;
 }
 
 .dato-curioso h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-    color: #efb810;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #efb810;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .dato-curioso p {
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
-    font-size: 1rem;
-    line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .dato-curioso i {
-    color: #efb810;
+  color: #efb810;
 }
+
 /* =====================================
 =               HOME GRID                =
 ===================================== */
 .home-grid {
-    display: grid;
-    grid-template-areas:
-      "hero"
-      "info"
-      "aside";
-    row-gap: 2rem;
-    padding: 2rem 5%;
-    margin-top: 11rem;
-    background-color: rgb(235, 223, 212);
+  display: grid;
+  grid-template-areas: "hero" "info" "aside";
+  row-gap: 2rem;
+  padding: 2rem 5%;
+  margin-top: 11rem;
+  background-color: rgb(235, 223, 212);
+}
+
+.hero-image {
+  grid-area: hero;
+}
+
+.info-importante {
+  grid-area: info;
+}
+
+.dato-curioso {
+  grid-area: aside;
+}
+
+@media (min-width: 768px) {
+  .home-grid {
+    grid-template-areas: "hero hero" "info aside";
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
   }
-  
-  .hero-image { grid-area: hero; }
-  .info-importante { grid-area: info; }
-  .dato-curioso { grid-area: aside; }
-  
-  @media (min-width: 768px) {
-    .home-grid {
-      grid-template-areas:
-        "hero hero"
-        "info aside";
-      grid-template-columns: 2fr 1fr;
-      column-gap: 2rem;
-    }
-  
-    .eslogan {
-      font-size: 1.5rem;
-    }
+  .eslogan {
+    font-size: 1.5rem;
   }
-  
+}
 /* =====================================
 =               Responsive                =
 ===================================== */
-
 @media (max-width: 768px) {
-    .info-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .dato-curioso {
-        margin: 2rem 0;
-    }
-
-    .eslogan {
-        font-size: 1.5rem;
-    }
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dato-curioso {
+    margin: 2rem 0;
+  }
+  .eslogan {
+    font-size: 1.5rem;
+  }
 }
-
 .footer {
-    background-color: #222;
-    color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    padding: 1rem 0;
-    gap: 2rem;
-    flex-wrap: wrap;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .footer-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
 .footer-item {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer-item:hover {
-    color: #efb810;
+  color: #efb810;
 }
 
 .footer i {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* =====================================
 =               Quienes Somos                =
 ===================================== */
 .main-quienes {
-    margin-top: 10rem;
-    padding: 2rem 5%;
-    background-color: rgb(235, 223, 212);
+  margin-top: 10rem;
+  padding: 2rem 5%;
+  background-color: rgb(235, 223, 212);
 }
-
 
 .container {
   max-width: 800px;
@@ -283,16 +279,15 @@ h1, h2, h3 {
 }
 
 .titulo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #222;
   margin-bottom: 2rem;
 }
 
-
 /* Títulos */
 h1, h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
 
@@ -307,175 +302,171 @@ h1, h2 {
   color: #333;
 }
 
-
-
 /* =====================================
 =               Productos                =
 ===================================== */
 .main-productos {
-    padding: 2rem 5%;
-    margin-top: 10rem;
-    background-color: rgb(235, 223, 212); 
+  padding: 2rem 5%;
+  margin-top: 10rem;
+  background-color: rgb(235, 223, 212);
 }
 
 .productos-grid {
-    display: grid;
-    gap: 2rem;
-    padding: 2rem 5%;
-    margin: 10rem auto 0 auto;
-    background-color: rgb(235, 223, 212);
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 5%;
+  margin: 10rem auto 0 auto;
+  background-color: rgb(235, 223, 212);
+}
+
+.titulo-productos {
+  text-align: center;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.producto {
+  position: relative;
+  background-color: #fff7e0;
+  border-left: 5px solid #efb810;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.producto:hover {
+  transform: scale(1.02);
+}
+
+/* Contenedor de imágenes con efecto hover */
+.producto-img-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-1, .img-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+  border-radius: 10px;
+}
+
+.img-2 {
+  opacity: 0;
+}
+
+.producto-img-container:hover .img-2 {
+  opacity: 1;
+}
+
+.producto-img-container:hover .img-1 {
+  opacity: 0;
+}
+
+/* Info del producto */
+.producto-info {
+  text-align: center;
+}
+
+.producto-info h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #efb810;
+  margin-bottom: 0.5rem;
+}
+
+.producto-info p {
+  font-family: "Inter", sans-serif;
+  color: #333;
+  line-height: 1.4;
+}
+
+.ver-mas {
+  background-color: #efb810;
+  color: #222;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.ver-mas:hover {
+  background-color: #ffd64d;
+}
+
+/* Info extra escondida por defecto */
+.extra-info {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  width: 250px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+  z-index: 10;
+}
+
+/* Alineación por tipo */
+.extra-info.miel {
+  left: -270px;
+}
+
+.extra-info.polen {
+  right: -270px;
+}
+
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .titulo-productos {
-    text-align: center;
-    color: #222;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1rem;
-  }
-  
-  .producto {
-    position: relative;
-    background-color: #fff7e0;
-    border-left: 5px solid #efb810;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .producto:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Contenedor de imágenes con efecto hover */
-  .producto-img-container {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 0 auto 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .img-1, .img-2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.4s ease;
-    border-radius: 10px;
-  }
-  
-  .img-2 {
-    opacity: 0;
-  }
-  
-  .producto-img-container:hover .img-2 {
-    opacity: 1;
-  }
-  
-  .producto-img-container:hover .img-1 {
-    opacity: 0;
-  }
-  
-  /* Info del producto */
-  .producto-info {
-    text-align: center;
-  }
-  
-  .producto-info h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #efb810;
-    margin-bottom: 0.5rem;
-  }
-  
-  .producto-info p {
-    font-family: 'Inter', sans-serif;
-    color: #333;
-    line-height: 1.4;
-  }
-  
-  .ver-mas {
-    background-color: #efb810;
-    color: #222;
-    border: none;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 0.5rem;
-  }
-  
-  .ver-mas:hover {
-    background-color: #ffd64d;
-  }
-  
-  /* Info extra escondida por defecto */
   .extra-info {
-    display: none;
-    position: absolute;
-    top: 1.5rem;
-    width: 250px;
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    font-size: 0.95rem;
-    z-index: 10;
+    position: static;
+    margin-top: 1rem;
+    width: auto;
   }
-  
-  /* Alineación por tipo */
-  .extra-info.miel {
-    left: -270px;
-  }
-  
+  .extra-info.miel,
   .extra-info.polen {
-    right: -270px;
+    left: auto;
+    right: auto;
   }
-  
-  @media (max-width: 768px) {
-    .productos-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .extra-info {
-      position: static;
-      margin-top: 1rem;
-      width: auto;
-    }
-  
-    .extra-info.miel,
-    .extra-info.polen {
-      left: auto;
-      right: auto;
-    }
-  }
+}
 /* =====================================
 =               Tienda                =
 ===================================== */
 .main-tienda {
-    margin-top: 10rem;
-    padding: 2rem 5%;
-    background-color: rgb(235, 223, 212);
+  margin-top: 10rem;
+  padding: 2rem 5%;
+  background-color: rgb(235, 223, 212);
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: rgb(235, 223, 212);
 }
 
 h1, h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .producto-card {
   border: none;
   border-left: 5px solid #efb810;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -494,12 +485,13 @@ h1, h5 {
   margin-bottom: 1rem;
 }
 
-
 /* =====================================
 =               Contacto                =
 ===================================== */
 .main-contacto {
-    margin-top: 10rem;
-    padding: 2rem 5%;
-    background-color: rgb(235, 223, 212); 
+  margin-top: 10rem;
+  padding: 2rem 5%;
+  background-color: rgb(235, 223, 212);
 }
+
+/*# sourceMappingURL=styles.css.map */
