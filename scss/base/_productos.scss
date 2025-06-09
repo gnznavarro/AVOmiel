@@ -1,0 +1,56 @@
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.border-start {
+  border-left: 4px solid $color-principal;
+}
+
+.border-end {
+  border-right: 4px solid $color-principal;
+}
+
+.producto-img-container {
+  position: relative;
+
+  .img-principal,
+  .img-hover {
+    width: 100%;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .img-hover {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .img-principal {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  &:hover {
+    .img-hover {
+      opacity: 1;
+    }
+
+    .img-principal {
+      opacity: 0;
+    }
+  }
+}
+
+.testimonios-bg {
+  background-color: #fcf5d8; 
+  border-radius: 10px;
+  padding: 2rem;
+}

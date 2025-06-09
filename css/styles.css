@@ -69,7 +69,7 @@ h1, h2, h3 {
 ===================================== */
 .home-content {
   padding: 2rem 5%;
-  margin-top: 10rem;
+  margin-top: 6rem;
   background-color: rgb(235, 223, 212);
 }
 
@@ -267,7 +267,7 @@ h1, h2, h3 {
 =               Quienes Somos                =
 ===================================== */
 .main-quienes {
-  margin-top: 10rem;
+  margin-top: 6rem;
   padding: 2rem 5%;
   background-color: rgb(235, 223, 212);
 }
@@ -307,7 +307,7 @@ h1, h2 {
 ===================================== */
 .main-productos {
   padding: 2rem 5%;
-  margin-top: 10rem;
+  margin-top: 6rem;
   background-color: rgb(235, 223, 212);
 }
 
@@ -315,7 +315,7 @@ h1, h2 {
   display: grid;
   gap: 2rem;
   padding: 2rem 5%;
-  margin: 10rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   background-color: rgb(235, 223, 212);
 }
 
@@ -329,7 +329,6 @@ h1, h2 {
 .producto {
   position: relative;
   background-color: #fff7e0;
-  border-left: 5px solid #efb810;
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -449,7 +448,7 @@ h1, h2 {
 =               Tienda                =
 ===================================== */
 .main-tienda {
-  margin-top: 10rem;
+  margin-top: 6rem;
   padding: 2rem 5%;
   background-color: rgb(235, 223, 212);
 }
@@ -489,9 +488,59 @@ h1, h5 {
 =               Contacto                =
 ===================================== */
 .main-contacto {
-  margin-top: 10rem;
+  margin-top: 6rem;
   padding: 2rem 5%;
   background-color: rgb(235, 223, 212);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.border-start {
+  border-left: 4px solid #efb810;
+}
+
+.border-end {
+  border-right: 4px solid #efb810;
+}
+
+.producto-img-container {
+  position: relative;
+}
+.producto-img-container .img-principal,
+.producto-img-container .img-hover {
+  width: 100%;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.producto-img-container .img-hover {
+  opacity: 0;
+  z-index: 1;
+}
+.producto-img-container .img-principal {
+  opacity: 1;
+  z-index: 2;
+}
+.producto-img-container:hover .img-hover {
+  opacity: 1;
+}
+.producto-img-container:hover .img-principal {
+  opacity: 0;
+}
+
+.testimonios-bg {
+  background-color: #fcf5d8;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
